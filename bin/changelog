@@ -19,6 +19,7 @@ var github         = new GitHubApi({ version: '3.0.0' });
 var compareCommits = Promise.denodeify(github.repos.compareCommits);
 var parseCommit = require('../lib/helpers/parse-commit');
 var getRepo = require('../lib/helpers/get-repository');
+var updateChangelog = require('../lib/helpers/update-changelog');
 
 getRepo()
   .then(function(repository) {
@@ -28,51 +29,61 @@ getRepo()
       base: 'v' + repository.version,
       head: 'master'
     }).then(function(res) {
-      console.log('Response', res);
-      return res.commits.map(function(commitInfo) {
-        console.log('info', commitInfo);
-        console.log('info', commitInfo.commit);
-        return commitInfo.commit.message;
-        }).map(parseCommit).filter(function(commit) {
-          // TODO allow hooks into this filter
-          return commit.type === 'merge';
-        })
-        .sort(function(a, b) {
+      // console.log('Response', res);
+      var commits = res.commits.map(parseCommit);
+      var merges = commits.filter(function(commit) {
+        // TODO allow hooks into this filter
+        return commit.type === 'merge';
+      });
+      var other = commits.filter(function(commit) {
+        // TODO allow hooks into this filter
+        return commit.type === 'revert' || (commit.type && commit.scope && commit.title);
+      });
+
+      var contributions = merges.sort(function(a, b) {
           return a.number > b.number;
-        }).map(function(pr) {
+        })
+        .map(function(pr) {
           var link   = '[#' + pr.number + ']' +
             '(https://github.com/ember-cli/ember-cli/pull/' + pr.number + ')';
           var title  = pr.title;
-          var author = '[@' + pr.author + ']' +
-            '(https://github.com/' + pr.author +')';
+          var author = '[@' + pr.authorHandle + ']' +
+            '(https://github.com/' + pr.authorHandle +')';
 
           return '- ' + link + ' ' + title + ' ' + author;
 
-        }).join('\n');
+        });
 
-    }).then(function(contributions) {
-      var changelog = generateChangelog(contributions);
+      var changes = other.map(function(commit) {
+        var ref = commit.reference.substr(0, 8);
 
-      console.log(changelog);
+        return '- [' + ref + '](https://github.com/' + repository.organization + '/' + repository.project +
+        '/commit/' + commit.reference + ') **' + commit.type.toLowerCase() + '(' + commit.scope + ')**: ' + commit.title +
+          ' *by [' + commit.author + '](https://github.com/' + commit.authorHandle +')*';
+
+      });
+
+      return {
+        contributions: contributions,
+        changes: changes
+      };
+
+    }).then(function(changes) {
+
+      var changeLog = generateChangelog(repository.version, changes);
+      updateChangelog([
+        { offset: 3, lines: changeLog }
+      ]);
+
     }).catch(function(err) {
       console.error(err);
     });
   });
 
-function generateChangelog(contributions) {
-  var header = multiline(function() {/*
-   The following changes are required if you are upgrading from the previous
-   version:
-   - Users
-   + Upgrade your project's ember-cli version - [docs](http://www.ember-cli.com/#project-update)
-   - Addon Developers
-   + No changes required
-   - Core Contributors
-   + No changes required
-   #### Community Contributions
-   */});
-
-  var footer = 'Thank you to all who took the time to contribute!';
-
-  return header + EOL + EOL + contributions + EOL + EOL + footer;
+function generateChangelog(version, changes) {
+  return ['## ' + version, '', '### Pull Requests']
+    .concat(changes.contributions)
+    .concat(['', '### Commits', ''])
+    .concat(changes.changes)
+    .concat(['']);
 }
