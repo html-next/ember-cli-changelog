@@ -22,9 +22,6 @@ var getRepo = require('../lib/helpers/get-repository');
 
 getRepo()
   .then(function(repository) {
-
-    console.log(repository);
-
     compareCommits({
       user: repository.organization,
       repo: repository.project,
