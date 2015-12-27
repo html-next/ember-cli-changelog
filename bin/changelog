@@ -33,30 +33,28 @@ getRepo()
       var commits = res.commits.map(parseCommit);
       var merges = commits.filter(function(commit) {
         // TODO allow hooks into this filter
-        return commit.type === 'merge';
+        return commit.isMerge;
       });
       var other = commits.filter(function(commit) {
         // TODO allow hooks into this filter
-        return commit.type === 'revert' || (commit.type && commit.scope && commit.title);
+        return commit.isRevert || (commit.type && commit.scope && commit.title);
       });
 
       var contributions = merges.sort(function(a, b) {
           return a.number > b.number;
         })
-        .map(function(pr) {
-
-          return '- [#' + pr.number + '](https://github.com/ember-cli/ember-cli/pull/' + pr.number + ')' +
-            ' **' + pr.title + '** *by [' + pr.author + '](https://github.com/' + pr.authorHandle +')*';
-
+        .map(function(commit) {
+          return '- [#' + commit.number + '](https://github.com/' + repository.organization + '/' + repository.project +
+            '/pull/' + commit.number + ') **' + commit.type + '(' + commit.scope + ')**: ' + commit.title +
+            '*by [' + commit.author + '](https://github.com/' + commit.authorHandle +')*';
         });
 
       var changes = other.map(function(commit) {
         var ref = commit.reference.substr(0, 8);
 
         return '- [' + ref + '](https://github.com/' + repository.organization + '/' + repository.project +
-        '/commit/' + commit.reference + ') **' + commit.type.toLowerCase() + '(' + commit.scope + ')**: ' + commit.title +
+        '/commit/' + commit.reference + ') **' + commit.type + '(' + commit.scope + ')**: ' + commit.title +
           ' *by [' + commit.author + '](https://github.com/' + commit.authorHandle +')*';
-
       });
 
       return {
@@ -79,7 +77,7 @@ getRepo()
 function generateChangelog(version, changes) {
   return ['## ' + version, '', '### Pull Requests']
     .concat(changes.contributions)
-    .concat(['', '### Commits', ''])
+    .concat(['', '#### Commits', ''])
     .concat(changes.changes)
     .concat(['']);
 }
