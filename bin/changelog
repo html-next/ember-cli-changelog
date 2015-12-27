@@ -44,13 +44,9 @@ getRepo()
           return a.number > b.number;
         })
         .map(function(pr) {
-          var link   = '[#' + pr.number + ']' +
-            '(https://github.com/ember-cli/ember-cli/pull/' + pr.number + ')';
-          var title  = pr.title;
-          var author = '[@' + pr.authorHandle + ']' +
-            '(https://github.com/' + pr.authorHandle +')';
 
-          return '- ' + link + ' ' + title + ' ' + author;
+          return '- [#' + pr.number + '](https://github.com/ember-cli/ember-cli/pull/' + pr.number + ')' +
+            ' **' + pr.title + '** *by [' + pr.author + '](https://github.com/' + pr.authorHandle +')*';
 
         });
 
