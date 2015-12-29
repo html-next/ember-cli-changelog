@@ -1,6 +1,6 @@
 /*jshint node:true*/
 module.exports = {
-  description: ''
+  description: 'Installs initial CHANGELOG.md file, config/release.js and ember-cli-release',
 
   // locals: function(options) {
   //   // Return custom template variables here.
@@ -9,7 +9,7 @@ module.exports = {
   //   };
   // }
 
-  // afterInstall: function(options) {
-  //   // Perform extra work here.
-  // }
+  afterInstall: function() {
+     this.addAddonToProject('ember-cli-release');
+  }
 };
