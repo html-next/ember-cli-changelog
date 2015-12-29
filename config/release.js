@@ -20,7 +20,21 @@ module.exports = {
   // patternForCommit: '',
 
   beforeCommit: function(project, versions) {
-    console.log(project);
-    return generateChangelog.call(project);
+    var context = {
+      project: project,
+      ui: project.ui
+    };
+    return generateChangelog.call(context)
+      .then(function() {
+        project.ui.prompt({
+          type: 'confirm',
+          name: 'answer',
+          message: 'Enter "y" when you have finished making any desired modifications to CHANGELOG.md',
+          choices: [
+            { key: 'y', name: 'Yes, update', value: 'yes' },
+            { key: 'n', name: 'No, cancel', value: 'no' }
+          ]
+        });
+      }.bind(this));
   }
 };
