@@ -4,6 +4,10 @@ Changelog
 ## 0.0.0
 
 ### Pull Requests
+
+#### Commits
+
+
 - [#1](https://github.com/runspired/ember-cli-changelog/pull/1) **feat(pr-entries)**: adds nicer styling for pull request entries in the …*by [Chris Thoburn](https://github.com/runspired)*
 - [#2](https://github.com/runspired/ember-cli-changelog/pull/2) **()**: *by [Chris Thoburn](https://github.com/runspired)*
 

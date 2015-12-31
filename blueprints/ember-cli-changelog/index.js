@@ -10,6 +10,6 @@ module.exports = {
   // }
 
   afterInstall: function() {
-     this.addAddonToProject('ember-cli-release');
+     return this.addAddonToProject('ember-cli-release');
   }
 };
