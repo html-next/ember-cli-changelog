@@ -17,7 +17,7 @@ var GitHubApi = require('github');
 
 var github         = new GitHubApi({ version: '3.0.0' });
 var compareCommits = Promise.denodeify(github.repos.compareCommits);
-var parseCommit = require('../lib/helpers/parse-commit');
+var parseCommit = require('../lib/helpers/git/parse-commit');
 var getRepo = require('../lib/helpers/get-repository');
 var updateChangelog = require('../lib/helpers/update-changelog');
 

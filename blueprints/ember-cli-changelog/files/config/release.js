@@ -14,11 +14,6 @@ module.exports = {
   // format: 'YYYY-MM-DD',
   // timezone: 'America/Los_Angeles',
 
-  defaultBranch: 'master',
-  useLocalTags: true,
-  // patternForPR: '',
-  // patternForCommit: '',
-
   beforeCommit: function(project, versions) {
     console.log(project);
     return generateChangelog.call(project);
