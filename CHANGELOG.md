@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## 0.0.0
+## v0.0.1
 
 ### Pull Requests
 
@@ -16,6 +16,8 @@ Changelog
 - [e84de175](https://github.com/runspired/ember-cli-changelog/commit/e84de1757c1c06d6846dab24ecac8fe459578a41) **feat(parse-commit)**: adds the ability to parse out information from a commit *by [Chris Thoburn](https://github.com/runspired)*
 - [d85cada4](https://github.com/runspired/ember-cli-changelog/commit/d85cada4bc51cf82d9a510dd664f6004616dff73) **feat(pr-entries)**: adds nicer styling for pull request entries in the changelog *by [Chris Thoburn](https://github.com/runspired)*
 - [46d5d22f](https://github.com/runspired/ember-cli-changelog/commit/46d5d22f59c6852baa1e6f609de0377fc4b55e6e) **chore(parse-commit)**: removes unused vars *by [Chris Thoburn](https://github.com/runspired)*
+
+## v0.0.0
 
 - Hold Your Horses,
 - Pack Your Parachutes,
