@@ -1,15 +1,15 @@
 Changelog
 =========
 
-## v0.2.0
+## v0.2.1
 
-#### Important Commits
+- [96696667](https://github.com/runspired/ember-cli-changelog/commit/96696667bfc5ec0f69d17944d7e79365522af289) **fix(default-blueprint)**: ensure installation works *by [Chris Thoburn](https://github.com/runspired)*
+
+## v0.2.0
 
 - [a51f966e](https://github.com/runspired/ember-cli-changelog/commit/a51f966ef89f5dd123e45cfa16d528761ce86cbe) **breaking(local-git)**: completely drops nodegit dependency as it destroys build times and angrily errors out for bad reasons when it's a secondary dependency *by [Chris Thoburn](https://github.com/runspired)*
 
 ## v0.1.1
-
-#### Important Commits
 
 - [9f69a3d1](https://github.com/runspired/ember-cli-changelog/commit/9f69a3d1c2c1e3e0b3146083806f83058ea2f698) **fix(dependencies)**: nodegit doesn't build on travis unless we use master *by [Chris Thoburn](https://github.com/runspired)*
 
