@@ -1,6 +1,12 @@
 Changelog
 =========
 
+## v0.1.1
+
+#### Commits
+
+- [9f69a3d1](https://github.com/runspired/ember-cli-changelog/commit/9f69a3d1c2c1e3e0b3146083806f83058ea2f698) **fix(dependencies)**: nodegit doesn't build on travis unless we use master *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.1.0
 
 ### Pull Requests
