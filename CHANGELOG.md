@@ -1,9 +1,15 @@
 Changelog
 =========
 
+## v0.2.0
+
+#### Important Commits
+
+- [a51f966e](https://github.com/runspired/ember-cli-changelog/commit/a51f966ef89f5dd123e45cfa16d528761ce86cbe) **breaking(local-git)**: completely drops nodegit dependency as it destroys build times and angrily errors out for bad reasons when it's a secondary dependency *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.1.1
 
-#### Commits
+#### Important Commits
 
 - [9f69a3d1](https://github.com/runspired/ember-cli-changelog/commit/9f69a3d1c2c1e3e0b3146083806f83058ea2f698) **fix(dependencies)**: nodegit doesn't build on travis unless we use master *by [Chris Thoburn](https://github.com/runspired)*
 
@@ -13,7 +19,7 @@ Changelog
 
 - [#4](https://github.com/runspired/ember-cli-changelog/pull/4) **docs**: Add link to Angular Git Commit Guidelines  *by [Andrew Timberlake](https://github.com/andrewtimberlake)*
 
-#### Commits
+#### Important Commits
 
 - [a2e90af2](https://github.com/runspired/ember-cli-changelog/commit/a2e90af2174e6586ca675cc27d60731c3c041355) **feat(ember-style-commits)**: adds support for ember-style commit parsing *by [Chris Thoburn](https://github.com/runspired)*
 - [7dab5206](https://github.com/runspired/ember-cli-changelog/commit/7dab520605a1007ddababc40eb1948ce89ac2de8) **breaking(config)**: removes the ability to manually specify github usage *by [Chris Thoburn](https://github.com/runspired)*
