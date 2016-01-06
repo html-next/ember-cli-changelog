@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-changelog",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Changelog generation for ember-cli projects.",
   "directories": {
     "doc": "doc",
