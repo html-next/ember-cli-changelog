@@ -2,6 +2,10 @@
 module.exports = {
   description: 'Installs initial CHANGELOG.md file, config/release.js and ember-cli-release',
 
+  normalizeEntityName: function(name) {
+    return name;
+  },
+
   // locals: function(options) {
   //   // Return custom template variables here.
   //   return {
