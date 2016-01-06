@@ -41,7 +41,6 @@
     "inquirer": "^0.11.0",
     "jsonfile": "^2.2.3",
     "multiline": "^1.0.2",
-    "nodegit": "nodegit/nodegit#master",
     "object-assign": "^4.0.1",
     "prompt": "^0.2.14",
     "rsvp": "^3.1.0",
