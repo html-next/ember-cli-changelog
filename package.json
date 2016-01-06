@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-changelog",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Changelog generation for ember-cli projects.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 4.2.4"
   },
-  "author": "",
+  "author": "Chris Thoburn (@runspired)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -30,7 +30,9 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "changelog",
+    "release"
   ],
   "dependencies": {
     "chalk": "^1.1.1",
