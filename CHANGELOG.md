@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v0.2.2
+
+- [170319a7](https://github.com/runspired/ember-cli-changelog/commit/170319a76855f7b6189a68f8c11503495e61b12e) **fix(blueprint)**: updates configurations *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.2.1
 
 - [96696667](https://github.com/runspired/ember-cli-changelog/commit/96696667bfc5ec0f69d17944d7e79365522af289) **fix(default-blueprint)**: ensure installation works *by [Chris Thoburn](https://github.com/runspired)*
