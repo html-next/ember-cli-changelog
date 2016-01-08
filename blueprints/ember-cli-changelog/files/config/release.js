@@ -14,8 +14,8 @@ module.exports = {
   // format: 'YYYY-MM-DD',
   // timezone: 'America/Los_Angeles',
 
-  beforeCommit: function(project, versions) {
+  beforeCommit: function(project, tags) {
     console.log(project);
-    return generateChangelog.call(project);
+    return generateChangelog(project, tags.latest, tags.next);
   }
 };
