@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v0.2.3
+
+- [a0d0a969](https://github.com/runspired/ember-cli-changelog/commit/a0d0a9690d4c738f338967cc7220020fd343e3c1) **fix(blueprint)**: installed release.js file no longer adds incorrect beforeCommit hook *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.2.2
 
 - [170319a7](https://github.com/runspired/ember-cli-changelog/commit/170319a76855f7b6189a68f8c11503495e61b12e) **fix(blueprint)**: updates configurations *by [Chris Thoburn](https://github.com/runspired)*
