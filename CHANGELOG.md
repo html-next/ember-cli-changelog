@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## v0.3.2
+
+#### Commits
+
+- [5f7fd08b](https://github.com/runspired/ember-cli-changelog/commit/5f7fd08b61dcd021404b4fb4afadc58f6ff3039a) **fix(generate)**: don't incude titles for groups that don't have any commits *by [Chris Thoburn](https://github.com/runspired)*
+- [05896152](https://github.com/runspired/ember-cli-changelog/commit/05896152660ff7f9525c0585e28bf14376e520f4) **fix(default-sort)**: commits will now be sorted most recent first *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.3.1
 
 - [f7bb5745](https://github.com/runspired/ember-cli-changelog/commit/f7bb574567f83308945fbbcc1517383b2a0b013d) **fix(chore-filter)**: all commit types will now filter chore commits from the log *by [Chris Thoburn](https://github.com/runspired)*
