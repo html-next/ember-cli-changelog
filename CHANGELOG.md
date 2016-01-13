@@ -1,6 +1,12 @@
 Changelog
 =========
 
+## v0.3.3
+
+#### Commits
+
+- [6a2a11b8](https://github.com/runspired/ember-cli-changelog/commit/6a2a11b8109a84ad2470fb1b4bed47c361eed8a6) **feat(fast-release)**: removes double prompt for changelog generation *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.3.2
 
 #### Commits
