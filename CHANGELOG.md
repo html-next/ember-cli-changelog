@@ -1,6 +1,11 @@
 Changelog
 =========
 
+## v0.3.1
+
+- [f7bb5745](https://github.com/runspired/ember-cli-changelog/commit/f7bb574567f83308945fbbcc1517383b2a0b013d) **fix(chore-filter)**: all commit types will now filter chore commits from the log *by [Chris Thoburn](https://github.com/runspired)*
+- [ef26d788](https://github.com/runspired/ember-cli-changelog/commit/ef26d788f9d8165acd7a481a6d32d4143e09eb7e) **feat(task-filter)**: all commit types will now filter task commits from the log *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.3.0
 
 - [2834e33a](https://github.com/runspired/ember-cli-changelog/commit/2834e33a6bbc37d7d5e27cd54e33d42df66cac53) **feat(angular-style)**: filter out chore commits *by [Chris Thoburn](https://github.com/runspired)*
