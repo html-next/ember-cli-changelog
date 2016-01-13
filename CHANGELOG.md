@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## v0.3.4
+
+#### Commits
+
+- [937ed274](https://github.com/runspired/ember-cli-changelog/commit/937ed274bc4ee0675d9adf28cc152cd52571e454) **fix(travis)**: hard locks jquery so travis test-all won't fail *by [Chris Thoburn](https://github.com/runspired)*
+- [11958cfc](https://github.com/runspired/ember-cli-changelog/commit/11958cfc2abd16da1e1697f059d3b6ed2c63e98f) **fix(travis)**: updates travis configuration *by [Chris Thoburn](https://github.com/runspired)*
+
 ## v0.3.3
 
 #### Commits
