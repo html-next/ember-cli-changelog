@@ -31,3 +31,12 @@ need to expose coming soon).
 ## Hooks
 
 Nearly every step of the changelog generation process is hookable via `config/changelog.js`.
+
+## Contributing
+
+ - Open an Issue for discussion first if you're unsure a feature/fix is wanted.
+ - Branch off of `develop`
+ - Use descriptive branch names
+ - Use Angular-Style Commits
+ - PR against `develop`.
+ 
