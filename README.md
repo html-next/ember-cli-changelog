@@ -32,6 +32,12 @@ need to expose coming soon).
 
 Nearly every step of the changelog generation process is hookable via `config/changelog.js`.
 
+## Github Private Repos
+
+If you want to use github private repos set your github token with the following environment variable
+ 
+`GITHUB_TOKEN=123abc`
+
 ## Contributing
 
  - Open an Issue for discussion first if you're unsure a feature/fix is wanted.
