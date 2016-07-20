@@ -36,3 +36,4 @@ install:
 
 script:
   - ember try $EMBER_TRY_SCENARIO test
+  - npm run-script test-node
