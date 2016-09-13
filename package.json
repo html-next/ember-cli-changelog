@@ -54,7 +54,7 @@
     "moment": "^2.13.0",
     "multiline": "^1.0.2",
     "object-assign": "^4.0.1",
-    "rsvp": "^3.1.0",
+    "rsvp": "^3.3.0",
     "valid-url": "^1.0.9"
   },
   "ember-addon": {
