@@ -50,7 +50,7 @@
     "chalk": "^1.1.1",
     "ember-cli-babel": "^5.1.6",
     "github": "^2.2.0",
-    "jsonfile": "^2.2.3",
+    "jsonfile": "^2.4.0",
     "moment": "^2.13.0",
     "multiline": "^1.0.2",
     "object-assign": "^4.0.1",
