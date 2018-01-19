@@ -51,7 +51,7 @@
     "ember-cli-babel": "^5.1.6",
     "github": "^9.2.0",
     "jsonfile": "^2.4.0",
-    "moment": "^2.13.0",
+    "moment": "^2.18.1",
     "multiline": "^1.0.2",
     "object-assign": "^4.0.1",
     "rsvp": "^3.5.0",
