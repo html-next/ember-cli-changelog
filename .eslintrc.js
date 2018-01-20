@@ -15,6 +15,8 @@ module.exports = {
     browser: true
   },
   rules: {
+    'no-unreachable': 'off',
+    'no-useless-escape': 'off'
   },
   overrides: [
     // node files
@@ -24,6 +26,7 @@ module.exports = {
         'testem.js',
         'ember-cli-build.js',
         'config/**/*.js',
+        'lib/**',
         'tests/dummy/config/**/*.js'
       ],
       excludedFiles: [
@@ -41,7 +44,8 @@ module.exports = {
       },
       plugins: ['node'],
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
-        // add your custom rules and overrides for node files here
+        'no-process-exit': 'off',
+        'node/no-unpublished-require': 'off'
       })
     }
   ]
