@@ -1,4 +1,3 @@
-/* jshint node:true */
 // var RSVP = require('rsvp');
 var generateChangelog = require('../lib/tasks/release-with-changelog');
 

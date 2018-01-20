@@ -1,5 +1,3 @@
-/* jshint node:true */
-
 'use strict';
 
 var expect = require('chai').expect;
@@ -16,7 +14,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'update documentation'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'ember'});
     expect(isCommitIncluded).to.be.true;
@@ -29,7 +27,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'ember'});
     expect(isCommitIncluded).to.be.false;
@@ -46,7 +44,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'ember', ignore: []});
     expect(isCommitIncluded).to.be.true;
@@ -70,7 +68,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'update documentation'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'angular'});
 
@@ -84,7 +82,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'angular'});
     expect(isCommitIncluded).to.be.false;
@@ -101,7 +99,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'angular', ignore: []});
     expect(isCommitIncluded).to.be.true;
@@ -125,7 +123,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'update documentation'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'jquery'});
 
@@ -139,7 +137,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'jquery'});
     expect(isCommitIncluded).to.be.false;
@@ -156,7 +154,7 @@ describe('default commit filter', function () {
       scope: 'beta',
       isStandard: true,
       title: 'some task'
-    }; 
+    };
 
     var isCommitIncluded = defaultCommitFilter(commit, {style: 'jquery', ignore: []});
     expect(isCommitIncluded).to.be.true;
@@ -170,5 +168,5 @@ describe('default commit filter', function () {
     isCommitIncluded = defaultCommitFilter(commit, {style: 'jquery', ignore: ['doc', 'tooling']});
     expect(isCommitIncluded).to.be.false;
   });
- 
+
 });

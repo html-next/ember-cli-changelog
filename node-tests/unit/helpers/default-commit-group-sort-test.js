@@ -1,5 +1,3 @@
-/* jshint node:true */
-
 'use strict';
 
 var expect = require('chai').expect;
@@ -18,7 +16,7 @@ describe('default commit group sort', function () {
       scope: undefined,
       isStandard: true,
       title: 'update documentation'
-    }]; 
+    }];
 
     var orderedCommits = defaultCommitGroupSort(commits, {style: 'ember'});
 
@@ -38,12 +36,12 @@ describe('default commit group sort', function () {
       scope: undefined,
       isStandard: true,
       title: 'update documentation'
-    }]; 
+    }];
 
     var orderedCommits = defaultCommitGroupSort(commits, {style: 'angular'});
 
     expect(orderedCommits).to.have.lengthOf(2);
     expect(orderedCommits[1].commits).to.have.lengthOf(1);
   });
-  
+
 });
