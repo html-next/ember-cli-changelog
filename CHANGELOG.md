@@ -1,6 +1,16 @@
 Changelog
 =========
 
+## v0.4.0-beta.1 (January 21st, 2018)
+
+### Pull Requests
+
+- [#204](https://github.com/html-next/ember-cli-changelog/pull/204)  Update dependencies to enable Greenkeeper 🌴  *by [html-next/greenkeeper](https://github.com/html-next/greenkeeper)*
+
+#### Commits
+
+- [4dfab768](https://github.com/html-next/ember-cli-changelog/commit/4dfab7687cf0dda196caf64a0cf621c2f34af969) **docs(readme)**: add Greenkeeper badge *by [greenkeeper[bot]](https://github.com/greenkeeper[bot])*
+
 ## v0.4.0-beta.0 (January 21st, 2018)
 
 ### Pull Requests
