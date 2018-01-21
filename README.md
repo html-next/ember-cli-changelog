@@ -41,8 +41,8 @@ If you want to use github private repos set your github token with the following
 ## Contributing
 
  - Open an Issue for discussion first if you're unsure a feature/fix is wanted.
- - Branch off of `develop`
+ - Branch off of `master`
  - Use descriptive branch names
  - Use Angular-Style Commits
- - PR against `develop`.
+ - PR against `master`.
  
