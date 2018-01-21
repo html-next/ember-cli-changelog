@@ -22,9 +22,9 @@
     "test-node": "mocha node-tests --recursive"
   },
   "dependencies": {
-    "@octokit/rest": "^14.0.4",
     "chalk": "^2.3.0",
     "ember-cli-babel": "^6.6.0",
+    "github": "^2.2.0",
     "jsonfile": "^4.0.0",
     "moment": "^2.18.1",
     "multiline": "^1.0.2",
