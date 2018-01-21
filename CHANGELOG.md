@@ -1,6 +1,44 @@
 Changelog
 =========
 
+## v0.4.0-beta.0 (January 21st, 2018)
+
+### Pull Requests
+
+- [#167](https://github.com/html-next/ember-cli-changelog/pull/167)  Update ember-resolver to version 4.0.0 🚀  *by [html-next](https://github.com/html-next)*
+- [#14](https://github.com/html-next/ember-cli-changelog/pull/14)  Update all the things  *by [seawatts/feature](https://github.com/seawatts/feature)*
+- [#16](https://github.com/html-next/ember-cli-changelog/pull/16)  Add GitHub auth for private repos  *by [seawatts/feature](https://github.com/seawatts/feature)*
+- [#20](https://github.com/html-next/ember-cli-changelog/pull/20)  Blueprint fixes  *by [Offir Golan](https://github.com/offirgolan)*
+- [#27](https://github.com/html-next/ember-cli-changelog/pull/27)  Ember style & custom ignore  *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [#26](https://github.com/html-next/ember-cli-changelog/pull/26)  Update ember-cli to version 2.6.3 🚀  *by [Chris Thoburn](https://github.com/runspired)*
+- [#22](https://github.com/html-next/ember-cli-changelog/pull/22)  dep(github) 2.1.0  *by [Chris Thoburn](https://github.com/runspired/feature)*
+- [#28](https://github.com/html-next/ember-cli-changelog/pull/28)  ember-cli-inject-live-reload@1.4.1 untested ⚠️  *by [Chris Thoburn](https://github.com/runspired)*
+- [#24](https://github.com/html-next/ember-cli-changelog/pull/24)  Update github to version 2.2.0 🚀  *by [Chris Thoburn](https://github.com/runspired)*
+- [#36](https://github.com/html-next/ember-cli-changelog/pull/36)  Set angular as default in blueprint  *by [Offir Golan](https://github.com/offirgolan)*
+- [#191](https://github.com/html-next/ember-cli-changelog/pull/191)  Update mocha to version 3.4.1 🚀  *by [html-next](https://github.com/html-next)*
+- [#187](https://github.com/html-next/ember-cli-changelog/pull/187)  ember-cli-htmlbars@1.3.2 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#17](https://github.com/html-next/ember-cli-changelog/pull/17)  Added the date to the changelog title  *by [seawatts/feature](https://github.com/seawatts/feature)*
+- [#133](https://github.com/html-next/ember-cli-changelog/pull/133)  ember-cli-inject-live-reload@1.5.0 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#33](https://github.com/html-next/ember-cli-changelog/pull/33)  broccoli-asset-rev@2.4.5 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#72](https://github.com/html-next/ember-cli-changelog/pull/72)  jsonfile@2.4.0 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#159](https://github.com/html-next/ember-cli-changelog/pull/159)  rsvp@3.5.0 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#155](https://github.com/html-next/ember-cli-changelog/pull/155)  Update github to version 9.2.0 🚀  *by [html-next](https://github.com/html-next)*
+- [#162](https://github.com/html-next/ember-cli-changelog/pull/162)  moment@2.18.1 untested ⚠️  *by [html-next](https://github.com/html-next)*
+- [#100](https://github.com/html-next/ember-cli-changelog/pull/100)  Update ember-cli-app-version to version 2.0.1 🚀  *by [html-next](https://github.com/html-next)*
+- [#199](https://github.com/html-next/ember-cli-changelog/pull/199)  Merge develop to master  *by [html-next](https://github.com/html-next)*
+- [#200](https://github.com/html-next/ember-cli-changelog/pull/200)  Update deps  *by [html-next](https://github.com/html-next)*
+- [#201](https://github.com/html-next/ember-cli-changelog/pull/201)  runspired -> html-next  *by [html-next](https://github.com/html-next)*
+- [#202](https://github.com/html-next/ember-cli-changelog/pull/202)  Remove jshint comments  *by [html-next](https://github.com/html-next)*
+
+#### Commits
+
+- [49e14a40](https://github.com/html-next/ember-cli-changelog/commit/49e14a40d16e2e68ee59e8c94dc9977ec8ab6157) **test(commit-filter)**: add missing tests for ignoring standard and custom types *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [f254a3ff](https://github.com/html-next/ember-cli-changelog/commit/f254a3ffad7d27850edbabbe727125b6a5326989) **feat(commit-filter)**: add option for user to ignore custom types *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [73360cf0](https://github.com/html-next/ember-cli-changelog/commit/73360cf0dd020fd9bf3e9f06dedc2d2f4be8e385) **test(commit-group-sort)**: add missing tests for other commits *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [de48f464](https://github.com/html-next/ember-cli-changelog/commit/de48f4640ea8e8603ac3fe0cff73d8427ab275d8) **fix(commit-group-sort)**: allow not scoped ember commits *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [8916d489](https://github.com/html-next/ember-cli-changelog/commit/8916d489db2f18cd439f2730b7b0ea662e18062b) **test(ember-style-parser)**: add missing tests for standard and non standard scoped commits *by [Baptiste Meurant](https://github.com/bmeurant)*
+- [bea4756c](https://github.com/html-next/ember-cli-changelog/commit/bea4756c366bff2fd8eb3c65512a4e37558341a1) **fix(ember-style-parser)**: commit types are now correctly extracted *by [Baptiste Meurant](https://github.com/bmeurant)*
+
 ## v0.3.4
 
 #### Commits
