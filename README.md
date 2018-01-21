@@ -1,6 +1,8 @@
 Ember-cli-changelog
 ===================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/html-next/ember-cli-changelog.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/ember-cli-changelog.svg)](http://badge.fury.io/js/ember-cli-changelog)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-changelog.svg)](http://emberobserver.com/addons/ember-cli-changelog)
 [![Build Status](https://travis-ci.org/html-next/ember-cli-changelog.svg)](https://travis-ci.org/html-next/ember-cli-changelog)
